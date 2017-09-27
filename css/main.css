@@ -50,5 +50,11 @@ a:hover, a:active{
     color: #FFF;
     display: inline-block;
     padding: 10px 25px;
-    /*come back for height*/
+    height: 20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+    background-color: #CF5C3F;
+    text-shadow: none;
 }
