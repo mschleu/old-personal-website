@@ -22,11 +22,11 @@ a:hover, a:active{
     clear: both;
 }
 
-.mainHeader div{
+/*.mainHeader img{
     width: 30%;
     height: auto;
     margin: 2% 0;
-}
+}*/
 
 .mainHeader nav{
     background-color: #666;
