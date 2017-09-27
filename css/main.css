@@ -28,6 +28,13 @@ a:hover, a:active{
     margin: 2% 0;
 }*/
 
+.logo{
+    background-image: url('img/keyboard.jpg');
+    width: 30%;
+    height: 30%;
+    margin: 2% 0;
+}
+
 .mainHeader nav{
     background-color: #666;
     height: 40px;
