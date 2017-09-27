@@ -58,3 +58,9 @@ a:hover, a:active{
     background-color: #CF5C3F;
     text-shadow: none;
 }
+
+.mainHeader nav ul li a{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
