@@ -22,7 +22,7 @@ a:hover, a:active{
     clear: both;
 }
 
-.mainHeader img{
+.mainHeader div{
     width: 30%;
     height: auto;
     margin: 2% 0;
