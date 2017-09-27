@@ -1,6 +1,8 @@
 body{
-    background-image: url('img/bg.png');
     color: #000305;
-    font-size:87.5%
+    font-size:87.5%;
+    font-family: Arial, 'Lucida Sans Unicode';
+    line-height: 1.5;
+    text-align: left;
 }
 
