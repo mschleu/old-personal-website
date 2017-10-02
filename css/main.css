@@ -91,6 +91,25 @@ section {
     border-bottom: #000000 1px solid;
 }
 
+.port img {
+    display: block;
+    margin: auto;
+}
+
+.bots img{
+    display: inline;
+    padding-left: 130px;
+}
+
+.exh img {
+    display: inline;
+    padding-left: 30px;
+}
+
+.con p {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     width: 100;
