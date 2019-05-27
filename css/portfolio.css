@@ -1,0 +1,114 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background-color: #A9A9A9;
+}
+
+/* --- Header --- */
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.445);
+}
+
+.social {
+    width: 17%;
+    text-align: right;
+    float: right;
+    padding: 10px;
+}
+
+.social a {
+    padding: 5px;
+}
+
+.social a img:hover {
+    filter: invert(100%);
+}
+
+.header img {
+    width: 35px;
+    height: 35px;
+}
+
+@font-face { font-family: Elianto-Regular; src: url('../font/Elianto-Regular.otf'); }
+
+.name-block {
+    font-family: Elianto-Regular;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.nav-block {
+    text-align: center;
+}
+
+.nav-block a {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-block a:hover {
+    color: black;
+}
+
+.nav-block a.active:before {
+    font-size: 35px;
+    content: '[ '
+}
+
+.nav-block a.active:after {
+    font-size: 35px;
+    content: ' ]'
+}
+
+/* --- image grid --- */
+.matrix {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 75%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.col {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 30px;
+}
+
+.col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
