@@ -5,6 +5,12 @@ body {
 
 /* --- Header --- */
 .container {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-y: scroll;
     position: absolute;
     margin: auto;
     top: 0;
@@ -14,7 +20,10 @@ body {
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.445);
+    background-color: #DCDCDC; /* Gainsboro */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .social {
@@ -84,7 +93,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 90%;
+    width: 65%;
     height: 75%;
 }
 
@@ -97,11 +106,14 @@ body {
 .col {
     flex: 25%;
     max-width: 33.3%;
-    padding: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
 }
 
 .col img {
     margin-top: 8px;
+    margin-bottom: 5px;
     vertical-align: middle;
     width: 100%;
 }
