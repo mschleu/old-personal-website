@@ -36,31 +36,144 @@
 
             <div class="matrix">
                 <div class="row">
-                    <div class="col">
-                        <p><img src="img/8051p1.jpg">8051 Based System</p>
-                        <p><img src="img/fpga.jpg">Five Stage Pipeline CPU</p>
-                        <p><img src="img/bot1.jpg">CEEN Bot Two Way Communication System</p>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/8051p1.jpg">
+                            <h3>8051 Based System</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
                     </div>
-                    <div class="col">
-                        <p><img src="img/firstpcb1.jpg">First PCB Design</p>
-                        <p><img src="img/exhibit.png">VR Applicaitons</p>
-                        <p><img src="img/ttt.PNG">AR Applications</p>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/fpga.jpg">
+                            <h3>Five Stage Pipeline CPU</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
                     </div>
-                    <div class="col">
-                        <p><img src="img/app2.PNG">Mobile Applications</p>
-                        <p><img src="img/app1.png">Research Projects</p>
-                        <p><img src="img/posterpres.JPG">FUSE Study</p>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/bot1.jpg">
+                            <h3>CEEN Bot Two Way Communication System</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
                     </div>
-                    <div class="col">
-                        <p><img src="img/mirror1.jpg">Smart Mirror</p>
-                        <p><img src="img/mirror1.jpg">PC Building</p>
-                        <p><img src="img/mirror1.jpg">Custom PC Side Panel</p>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/firstpcb1.jpg">
+                            <h3>First PCB Design</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/exhibit.png">
+                            <h3>VR Application</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/ttt.PNG">
+                            <h3>AR Application</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/app2.PNG">
+                            <h3>Mobile Applications</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/app1.png">
+                            <h3>Research Projects</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/posterpres.JPG">
+                            <h3>FUSE Study</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="accordion">
+                            <img src="img/mirror1.jpg">
+                            <h3>Smart Mirror</h3>
+                        </button>
+                        <div class="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
             
+            <div class="expanding-image-container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+            
+                <!-- Image text -->
+                <div id="imgtext"></div>
 
-        </div>
+                
+            </div>
+
+        </div> 
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+        </script>
+
+        <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            // imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        }
+        </script>
     </body>
 </html>
