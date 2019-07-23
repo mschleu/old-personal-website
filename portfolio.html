@@ -10,31 +10,73 @@
     	
     <body>
         <div class="container">
-            <div class="header">
-                <div class="social">
-                    <a id="fb" class="icon"><img src="img/fb_white.png"></a>
-                    <a id="insta" class="icon"><img src="img/insta_white.png"></a>
-                    <a id="yt" class="icon"><img src="img/yt_white.png"></a>
-                    <a id="in" class="icon"><img src="img/in_white.png"></a>
-                </div>
+            <div class="header-wrapper">
+                <div class="header">
+                    <div class="social">
+                        <a id="fb" class="icon"><img src="img/fb_white.png"></a>
+                        <a id="insta" class="icon"><img src="img/insta_white.png"></a>
+                        <a id="yt" class="icon"><img src="img/yt_white.png"></a>
+                        <a id="in" class="icon"><img src="img/in_white.png"></a>
+                    </div>
 
-                <div class="name-block">
-                    <a class="name">MASON SCHLEU</a>
-                </div>
+                    <div class="name-block">
+                        <a class="name">MASON SCHLEU</a>
+                    </div>
 
-                <div class="nav-block">
-                    <div class="nav">
-                        <a href="index.html">Home</a>
-                        <a href="#about">About</a>
-                        <a class="active" href="portfolio.html">Portfolio</a>
-                        <a href="#resume">Resume</a>
-                        <a href="#projects">Projects</a>
-                        <a href="contact.html">Contact</a>
+                    <div class="nav-block">
+                        <div class="nav">
+                            <a href="index.html">Home</a>
+                            <a href="#about">About</a>
+                            <a class="active" href="portfolio.html">Portfolio</a>
+                            <a href="#resume">Resume</a>
+                            <a href="#projects">Projects</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="matrix">
+                <div class="row1">
+                    <div class="col">
+                        <img src="img/background.jpg" alt="Nature" style="width:100%" onclick="myFunction1(this);">              
+                    </div>
+                    <div class="col">
+                        <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                    <div class="col">
+                        <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                    <div class="col">
+                        <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                </div>
+                <div class="expanding-img-container1">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg1" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="row2">
+                    <div class="col">
+                        <img src="img/background.jpg" alt="Nature" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="col">
+                        <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="col">
+                        <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="col">
+                        <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                </div>
+                <div class="expanding-img-container2">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg2" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+            </div>
+            <!-- <div class="matrix">
                 <div class="row">
                     <div class="column">
                         <button class="accordion">
@@ -127,27 +169,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
-            <div class="expanding-image-container">
-                <!-- Close the image -->
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            
-                <!-- Expanded image -->
-                <img id="expandedImg" style="width:100%">
-            
-                <!-- Image text -->
-                <div id="imgtext"></div>
-
-                
-            </div>
 
         </div> 
 
         <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
-        
         for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
@@ -162,16 +191,20 @@
         </script>
 
         <script>
-        function myFunction(imgs) {
-            // Get the expanded image
-            var expandImg = document.getElementById("expandedImg");
-            // Get the image text
+        function myFunction1(imgs) {
+            var expandImg = document.getElementById("expandedImg1");
             var imgText = document.getElementById("imgtext");
-            // Use the same src in the expanded image as the image being clicked on from the grid
             expandImg.src = imgs.src;
-            // Use the value of the alt attribute of the clickable image as text inside the expanded image
-            // imgText.innerHTML = imgs.alt;
-            // Show the container element (hidden with CSS)
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+        </script>
+        <script>
+        function myFunction2(imgs) {
+            var expandImg = document.getElementById("expandedImg2");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
             expandImg.parentElement.style.display = "block";
         }
         </script>

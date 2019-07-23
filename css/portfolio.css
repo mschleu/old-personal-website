@@ -25,7 +25,6 @@ body {
     left: 0;
 }
 
-
 .header {
     background-color: #DCDCDC; /* Gainsboro */
     position: fixed;
@@ -104,83 +103,44 @@ body {
     height: 75%;
 }
 
-.row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-.column {
+.col {
     float: left;
     width: 25%;
-}
-  
-  /* Clear floats after rows */ 
-  .row:after {
+    padding: 10px;
+  }
+
+  .col img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+
+  .col img:hover {
+    opacity: 1;
+  }
+
+  .row1:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-  /* Content */
-.accordion {
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    border: none;
-    outline: none;
-}
-
-.accordion:hover {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.accordion img {
-    max-width: 100%;
-    max-height: 75%;
-}
-
-.panel {
-    padding: 0 18px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
-}
-  
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
 
-.expanding-image-container {
+  .expanding-img-container1 {
     position: relative;
     display: none;
-    width: 500px;
-    height: 500px;
   }
 
-  /* Expanding image text */
-#imgtext {
+  .expanding-img-container2 {
+    position: relative;
+    display: none;
+  }
+
+  #imgtext {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -188,8 +148,7 @@ body {
     font-size: 20px;
   }
 
-/* Closable button inside the image */
-.closebtn {
+  .closebtn {
     position: absolute;
     top: 10px;
     right: 15px;

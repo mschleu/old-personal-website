@@ -9,30 +9,49 @@
     </head>
     	
     <body>
-
             <div style="text-align:center">
                 <h2>Tabbed Image Gallery</h2>
                 <p>Click on the images below:</p>
             </div>
+            
+            <!-- The four columns -->
             <div class="row">
-                <div class="column">
+                <div class="col">
                     <img src="img/background.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
                     <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
                     <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-                </div>
-                <div class="column">
                     <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
                 </div>
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="col">
+                    <img src="img/background.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                    <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                    <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                    <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="col">
+                    <img src="img/background.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                    <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                    <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                    <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
             </div>
-            <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg" style="width:100%">
-                <div id="imgtext"></div>
-            </div>
+            
+            
             <script>
                 function myFunction(imgs) {
                     var expandImg = document.getElementById("expandedImg");
