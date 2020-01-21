@@ -1,20 +1,19 @@
+@font-face { font-family: Elianto-Regular; src: url('../font/Elianto-Regular.otf'); }
+html,
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
-    background-color: #A9A9A9;
+    height: 100%;
 }
 
-.container {
+h1 {
+    font-family: Elianto-Regular;
+}
+
+.bgimg {
     background-image: url('../img/background2.jpg');
-    background-repeat: no-repeat;
+    min-height: 100%;
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 .header {
@@ -42,38 +41,32 @@ body {
     filter: invert(100%);
 }
 
-.box {
+.blurr-box {
     text-align: center;
     vertical-align: middle;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    margin: auto;
-    top: 5%;
-    width: 75%;
-    height: 75%;
     background: inherit;
     overflow: hidden;
 }
 
-.box:before {
+.blurr-box:before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    box-shadow: inset 0 0 0 2000px rgba(47, 79, 79, 0.5);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0);
     filter: blur(10px);
     background: inherit;
     margin: -20px;
 }
 
-@font-face { font-family: Elianto-Regular; src: url('../font/Elianto-Regular.otf'); }
 .name-block {
     font-family: Elianto-Regular;
     font-size: 100px;
     position: relative;
-    top: 35%; 
+    top: 35%;
     color: white;
 }
 
@@ -116,7 +109,7 @@ body {
     margin: 50px;
     background: white;
 }
-  
+
 /* Clear floats after image containers */
 .row::after {
     content: "";
