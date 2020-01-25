@@ -9,116 +9,23 @@ h1 {
     font-family: Elianto-Regular;
 }
 
-.bgimg {
-    background-image: url('../img/background2.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-.header {
-    text-align: right;
-    padding: 25px;
-}
-
-.header a {
-    padding: 5px;
-}
-
 .header img {
     width: 50px;
     height: 50px;
 }
 
-.header:hover {
-    transition-duration:0.2s;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition-timing-function: ease-in;
-    color: black;
-}
-
-.header a img:hover {
-    filter: invert(100%);
-}
-
-.box {
-    text-align: center;
-    vertical-align: middle;
-    background-color: rgba(255, 255, 255, 0);
-    background: inherit;
-    overflow: hidden;
-    width: 75%;
-    height: 75%;
-}
-
-.box:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, .1);
-    filter: blur(10px);
-    background: inherit;
-    margin: -20px;
-}
-
-.name {
-    position: relative;
-}
-
-.name-block {
-    font-family: Elianto-Regular;
-    font-size: 100px;
-    position: relative;
-    top: 35%;
-    color: white;
-}
-
-.nav-block {
-    position: relative;
-    top: 40%;
-}
-
-.nav-block a {
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    color: white;
-}
-
-.nav-block a:hover {
-    color: black;
-}
-
 .nav-block a.active:before {
-    font-size: 35px;
     content: '[ '
 }
 
 .nav-block a.active:after {
-    font-size: 35px;
     content: ' ]'
 }
 
-.row {
-    margin: auto;
+.header {
+    padding: 25px;
 }
 
-.column {
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
-    margin: 50px;
-    background: white;
-}
-
-/* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.header a {
+    padding: 5px;
 }

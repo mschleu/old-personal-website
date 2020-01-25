@@ -1,212 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
     <head>
         <meta character="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Mason Schleu | Portfolio</title>
-        <link rel="stylesheet" href="css/portfolio.css" type="text/css"/>
+        <link rel="stylesheet" href="css/index.css" type="text/css"/>
     </head>
-    	
+
     <body>
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="header">
-                    <div class="social">
-                        <a id="fb" class="icon"><img src="img/fb_white.png"></a>
-                        <a id="insta" class="icon"><img src="img/insta_white.png"></a>
-                        <a id="yt" class="icon"><img src="img/yt_white.png"></a>
-                        <a id="in" class="icon"><img src="img/in_white.png"></a>
-                    </div>
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-content">
 
-                    <div class="name-block">
-                        <a class="name">MASON SCHLEU</a>
-                    </div>
+            <div class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+                <h1 class="w3-jumbo">MASON SCHLEU</h1>
 
-                    <div class="nav-block">
-                        <div class="nav">
-                            <a href="index.html">Home</a>
-                            <a href="#about">About</a>
-                            <a class="active" href="portfolio.html">Portfolio</a>
-                            <a href="#resume">Resume</a>
-                            <a href="#projects">Projects</a>
-                            <a href="contact.html">Contact</a>
-                        </div>
+                <div class="nav-block w3-padding-32">
+                    <div class="w3-bar">
+                        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                        <a href="#about" class="w3-bar-item w3-button">About</a>
+                        <a href="#portfolio" class="active w3-bar-item w3-button">Portfolio</a>
+                        <a href="#resume" class="w3-bar-item w3-button">Resume</a>
+                        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="matrix">
-                <div class="row1">
-                    <div class="col">
-                        <img src="img/background2.jpg" alt="Nature" style="width:100%" onclick="myFunction1(this);">              
-                    </div>
-                    <div class="col">
-                        <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction1(this);">
-                    </div>
-                    <div class="col">
-                        <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction1(this);">
-                    </div>
-                    <div class="col">
-                        <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction1(this);">
-                    </div>
+			</div>
+
+            <!-- <div class="box w3-display-middle">
+                <div class="name-block">
+                    <a class="name">MASON SCHLEU</a>
                 </div>
-                <div class="expanding-img-container1">
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    <img id="expandedImg1" style="width:100%">
-                    <div id="imgtext"></div>
-                </div>
-                <div class="row2">
-                    <div class="col">
-                        <img src="img/background2.jpg" alt="Nature" style="width:100%" onclick="myFunction2(this);">
-                    </div>
-                    <div class="col">
-                        <img src="img/IMG_0185.jpg" alt="Snow" style="width:100%" onclick="myFunction2(this);">
-                    </div>
-                    <div class="col">
-                        <img src="img/IMG_0249.jpg" alt="Mountains" style="width:100%" onclick="myFunction2(this);">
-                    </div>
-                    <div class="col">
-                        <img src="img/IMG_0274.jpg" alt="Lights" style="width:100%" onclick="myFunction2(this);">
-                    </div>
-                </div>
-                <div class="expanding-img-container2">
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    <img id="expandedImg2" style="width:100%">
-                    <div id="imgtext"></div>
-                </div>
-            </div>
-            <!-- <div class="matrix">
-                <div class="row">
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/8051p1.jpg">
-                            <h3>8051 Based System</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/fpga.jpg">
-                            <h3>Five Stage Pipeline CPU</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/bot1.jpg">
-                            <h3>CEEN Bot Two Way Communication System</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/firstpcb1.jpg">
-                            <h3>First PCB Design</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/exhibit.png">
-                            <h3>VR Application</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/ttt.PNG">
-                            <h3>AR Application</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/app2.PNG">
-                            <h3>Mobile Applications</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/app1.png">
-                            <h3>Research Projects</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/posterpres.JPG">
-                            <h3>FUSE Study</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="accordion">
-                            <img src="img/mirror1.jpg">
-                            <h3>Smart Mirror</h3>
-                        </button>
-                        <div class="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
+                <div class="nav-block">
+                    <div class="nav">
+                        <a class="active" href="index.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="portfolio_tmp.html">Portfolio</a>
+                        <a href="#resume">Resume</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </div> -->
-            
-
-        </div> 
-
-        <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-        });
-        }
-        </script>
-
-        <script>
-        function myFunction1(imgs) {
-            var expandImg = document.getElementById("expandedImg1");
-            var imgText = document.getElementById("imgtext");
-            expandImg.src = imgs.src;
-            imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
-        }
-        </script>
-        <script>
-        function myFunction2(imgs) {
-            var expandImg = document.getElementById("expandedImg2");
-            var imgText = document.getElementById("imgtext");
-            expandImg.src = imgs.src;
-            imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
-        }
-        </script>
+        </div>
     </body>
 </html>
