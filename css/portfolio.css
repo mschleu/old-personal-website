@@ -1,158 +1,30 @@
-* {
-    box-sizing: border-box;
-  }
-
+html,
 body {
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
-    background-color: #A9A9A9;
-}
-
-/* --- Header --- */
-.container {
-    width: 100%;
     height: 100%;
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    overflow-y: scroll;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.header {
-    background-color: #DCDCDC; /* Gainsboro */
-    position: fixed;
-    width: 100%;
-    margin: auto;
-    z-index: 1;
-}
-
-.social {
-    width: 17%;
-    text-align: right;
-    float: right;
-    padding: 10px;
-}
-
-.social a {
-    padding: 5px;
-}
-
-.social a img:hover {
-    filter: invert(100%);
-}
-
-.header img {
-    width: 35px;
-    height: 35px;
-}
-
-@font-face { font-family: Elianto-Regular; src: url('../font/Elianto-Regular.otf'); }
-.name-block {
-    font-family: Elianto-Regular;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-
-.nav-block {
-    text-align: center;
-}
-
-.nav-block a {
-    padding: 14px 16px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    color: white;
-}
-
-.nav-block a:hover {
-    color: black;
 }
 
 .nav-block a.active:before {
-    font-size: 35px;
     content: '[ '
 }
 
 .nav-block a.active:after {
-    font-size: 35px;
     content: ' ]'
 }
 
-/* --- image grid --- */
-.matrix {
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 65%;
-    height: 75%;
+.portfolio {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -118px;
+    vertical-align:bottom;
 }
 
-.col {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
+.divPush {
+    height: 118px;
+}
 
-  .col img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-
-  .col img:hover {
-    opacity: 1;
-  }
-
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-  .expanding-img-container1 {
-    position: relative;
-    display: none;
-  }
-
-  .expanding-img-container2 {
-    position: relative;
-    display: none;
-  }
-
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
+.footer {
+    width: 100%;
+    height: 118px;
+    bottom: 0;
+}
