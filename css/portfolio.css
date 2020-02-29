@@ -19,6 +19,9 @@ body {
     vertical-align:bottom;
 }
 
+.w3-row-padding img {margin-bottom: 12px}
+img:hover{opacity: 0.6; transition: 0.3s}
+
 .divPush {
     height: 118px;
 }
