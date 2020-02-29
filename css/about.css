@@ -1,17 +1,6 @@
-@font-face { font-family: Elianto-Regular; src: url('../font/Elianto-Regular.otf'); }
 html,
 body {
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
     height: 100%;
-}
-
-h1 {
-    font-family: Elianto-Regular;
-}
-
-.header img {
-    width: 50px;
-    height: 50px;
 }
 
 .nav-block a.active:before {
@@ -22,15 +11,7 @@ h1 {
     content: ' ]'
 }
 
-.header {
-    padding: 25px;
-}
-
-.header a {
-    padding: 5px;
-}
-
-.home {
+.about {
     min-height: 100%;
     height: auto !important;
     height: 100%;

@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta character="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css"/>
+    <title>Mason Schleu | Portfolio</title>
+</head>
 
-    <head>
-        <meta character="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>Mason Schleu | Portfolio</title>
-        <link rel="stylesheet" href="css/index.css" type="text/css"/>
-    </head>
-
-    <body>
-        <!-- !PAGE CONTENT! -->
-        <div class="w3-content">
-
-            <div class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-                <h1 class="w3-jumbo">MASON SCHLEU</h1>
-
-                <div class="nav-block w3-padding-32">
-                    <div class="w3-bar">
-                        <a href="index.html" class="w3-bar-item w3-button">Home</a>
-                        <a href="#about" class="w3-bar-item w3-button">About</a>
-                        <a href="#portfolio" class="active w3-bar-item w3-button">Portfolio</a>
-                        <a href="#resume" class="w3-bar-item w3-button">Resume</a>
-                        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-                    </div>
-                </div>
-
-			</div>
-
-            <!-- <div class="box w3-display-middle">
-                <div class="name-block">
-                    <a class="name">MASON SCHLEU</a>
-                </div>
-                <div class="nav-block">
-                    <div class="nav">
-                        <a class="active" href="index.html">Home</a>
-                        <a href="#about">About</a>
-                        <a href="portfolio_tmp.html">Portfolio</a>
-                        <a href="#resume">Resume</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                    </div>
+<body class="w3-light-grey">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="nav-block w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+            <a href="portfolio.html" class="active w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            <!-- <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                    <a href="#" class="w3-bar-item w3-button">Extras</a>
+                    <a href="#" class="w3-bar-item w3-button">Media</a>
                 </div>
             </div> -->
         </div>
-    </body>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="portfolio w3-content w3-container w3-padding-64" style="max-width:1500px">
+        <!-- Photo Grid -->
+        <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+            <div class="w3-third">
+                <img src="img/capstone/capstone1_1.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="This was my senior capstone poject. It is a foot temperature monitoring system 
+                for those suffering from diabetes. The goal is to monitor foot temperature and inform 
+                the user that their foot is at an increased risk of developing a foot ulcer.">
+
+                <img src="img/sharif1/sharif1_2.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="This PCB was designed for my first embedded systems design class. It features an
+                8051 microcontroller, RAM, ROM, keypad, 7segment display, RTC, and several other sensors.
+                This was my second PCB design and taught me the fundamentals of how computers work.">
+
+                <img src="img/apps/app1.png" style="width:100%" onclick="onClick(this)" 
+                alt="This image displays screenshots of the first mobile application I ever developed
+                for android. This app was developed for my FUSE study during my undergrad. It walks the
+                user through the BESS balance test. It collects balance data while the user performs these tests.
+                This mobile data was compared with high dollar, state of the art research equipment.
+                The purpose of this study was to determine if a low cost solution, such as a smart phone,
+                is a viable and accurate option to its expensive alternative">
+            </div>
+        
+            <div class="w3-third">
+                <img src="img/knarr/knarr1_1.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="This is a biomechanical device used to collect balance data from the user.">
+
+                <img src="img/kaneko/exhibit2.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="During my internship as a biomechanics research assistant, I developed a 
+                virtual reality android app that was featured at the Kaneko Kinetic: Art of Motion, 
+                art exhibit. This app gave the user several ballance challenging visuals for research
+                studies. This app was developed in Unity using C#.">
+            </div>
+        
+            <div class="w3-third">
+                <img src="img/sharif2/sharif2_1.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="This PCB was designed for my embedded system design class. This is the prototype 
+                and foundation for my senior capstone project. It connects to your phone over bluetooth
+                and transmits temperature data to the phone as well as stores it in an SD card.">
+
+                <img src="img/hololens/hololens.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="As an intern at the National Strategic Research Institute, or NSRI, I developed
+                several augmented reality (AR) applications using the Microsoft Hololens. One such app was
+                an air traffic control (ATC) simulator which was used for research in the practicality of AR,
+                specifically the Microsoft Hololens, in the training of ATCs. Through this internship 
+                I developed a strong passion for AR and VR.">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <div class="divPush"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer w3-container w3-padding-32 w3-center w3-black w3-xxlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <i class="fa fa-youtube w3-hover-opacity"></i>
+    </footer>
+
+    <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } 
+        else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+    </script>
+</body>
 </html>
