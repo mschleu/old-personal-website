@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta character="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/gallery.css" type="text/css"/>
+    <title>Mason Schleu | Hobbies</title>
+</head>
+
+<body class="w3-light-grey">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="nav-block w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+            <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
+            <a href="hobbies.html" class="active w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            <!-- <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                    <a href="#" class="w3-bar-item w3-button">Extras</a>
+                    <a href="#" class="w3-bar-item w3-button">Media</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="portfolio w3-content w3-container w3-padding-64" style="max-width:1500px">
+        <!-- Photo Grid -->
+        <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+            <div class="w3-third">
+                <img src="img/kbs/kb1.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="">
+
+                <img src="img/pcs/pc1.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="">
+            </div>
+        
+            <div class="w3-third">
+                <img src="img/pcs/pc2.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="">
+
+                <img src="img/kbs/kb2.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="">
+            </div>
+        
+            <div class="w3-third">
+                <img src="img/kbs/kb3.jpg" style="width:100%" onclick="onClick(this)" 
+                alt="">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <div class="divPush"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer w3-container w3-padding-32 w3-center w3-black w3-xxlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <i class="fa fa-youtube w3-hover-opacity"></i>
+    </footer>
+
+    <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } 
+        else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+    </script>
+</body>
+</html>
