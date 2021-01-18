@@ -19,8 +19,18 @@ body {
     vertical-align:bottom;
 }
 
-.box {
-    transform:translate(-50%,-75%);
+.container {
+    position: relative;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
 }
 
 .divPush {
