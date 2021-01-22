@@ -19,20 +19,6 @@ body {
     vertical-align:bottom;
 }
 
-.container {
-    position: relative;
-}
-
-.container:before,
-.container:after {
-    content: "";
-    display: table;
-}
-
-.container:after {
-    clear: both;
-}
-
 .divPush {
     height: 118px;
 }
