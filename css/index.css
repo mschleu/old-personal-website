@@ -7,6 +7,12 @@ body {
 
 h1 {
     font-family: Elianto-Regular;
+    color: #fe00fe;
+}
+
+h2 {
+    font-family: Elianto-Regular;
+    color: #00b3fe;
 }
 
 .header img {
