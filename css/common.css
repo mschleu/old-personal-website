@@ -1,0 +1,29 @@
+.my-button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.my-button:hover {
+    font-weight:bold;
+}
+
+.my-pink {
+    color: #fe00fe;
+}
+
+.my-blue {
+    color:#00b3fe
+}
+
+.my-background-color {
+    background-color:#1c0027
+}

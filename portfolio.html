@@ -6,27 +6,20 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/gallery.css" type="text/css"/>
+    <link rel="stylesheet" href="css/common.css" type="text/css"/>
     <title>Mason Schleu | Portfolio</title>
 </head>
 
-<body class="w3-light-grey">
+<body class="my-background-color">
     <!-- Navbar -->
     <div class="w3-top">
         <div class="nav-block w3-bar w3-black w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-            <a href="portfolio.html" class="active w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
-            <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBIES</a>
-            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-            <!-- <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-                    <a href="#" class="w3-bar-item w3-button">Extras</a>
-                    <a href="#" class="w3-bar-item w3-button">Media</a>
-                </div>
-            </div> -->
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large my-blue">HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small my-blue">ABOUT</a>
+            <a href="portfolio.html" class="active w3-bar-item w3-button w3-padding-large w3-hide-small my-blue">PORTFOLIO</a>
+            <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small my-blue">HOBBIES</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small my-blue">CONTACT</a>
         </div>
     </div>
 
@@ -35,48 +28,87 @@
         <!-- Photo Grid -->
         <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
             <div class="w3-third">
-                <img src="img/capstone/capstone1_1.jpg" style="width:100%" onclick="onClick(this)" 
-                alt="This was my senior capstone poject. It is a foot temperature monitoring system 
-                for those suffering from diabetes. The goal is to monitor foot temperature and inform 
-                the user that their foot is at an increased risk of developing a foot ulcer.">
+                <div class="container">
+                    <img src="img/capstone/capstone1_1.jpg" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="This was my senior capstone poject. It is a foot temperature monitoring system 
+                    for those suffering from diabetes. The goal is to monitor foot temperature and inform 
+                    the user that their foot is at an increased risk of developing a foot ulcer.">
+                    <div class="middle">
+                        <div class="text">Foot Temperature Monitor</div>
+                    </div>
+                </div>
 
-                <img src="img/sharif1/sharif1_2.jpg" style="width:100%" onclick="onClick(this)" 
-                alt="This PCB was designed for my first embedded systems design class. It features an
-                8051 microcontroller, RAM, ROM, keypad, 7segment display, RTC, and several other sensors.
-                This was my second PCB design and taught me the fundamentals of how computers work.">
+                <div class="container">
+                    <img src="img/sharif1/sharif1_2.jpg" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="This PCB was designed for my first embedded systems design class. It features an
+                    8051 microcontroller, RAM, ROM, keypad, 7segment display, RTC, and several other sensors.
+                    This was my second PCB design and taught me the fundamentals of how computers work.">
+                    <div class="middle">
+                        <div class="text">8051 Based System</div>
+                    </div>
+                </div>
 
-                <img src="img/apps/app1.png" style="width:100%" onclick="onClick(this)" 
-                alt="This image displays screenshots of the first mobile application I ever developed
-                for android. This app was developed for my FUSE study during my undergrad. It walks the
-                user through the BESS balance test. It collects balance data while the user performs these tests.
-                This mobile data was compared with high dollar, state of the art research equipment.
-                The purpose of this study was to determine if a low cost solution, such as a smart phone,
-                is a viable and accurate option to its expensive alternative">
+                <div class="container">
+                    <img src="img/apps/app1.png" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="This image displays screenshots of the first mobile application I ever developed
+                    for android. This app was developed for my FUSE study during my undergrad. It walks the
+                    user through the BESS balance test. It collects balance data while the user performs these tests.
+                    This mobile data was compared with high dollar, state of the art research equipment.
+                    The purpose of this study was to determine if a low cost solution, such as a smart phone,
+                    is a viable and accurate option to its expensive alternative">
+                    <div class="middle">
+                        <div class="text">BESS Balance Test</div>
+                    </div>
+                </div>
             </div>
         
             <div class="w3-third">
-                <img src="img/knarr/knarr1_1.jpg" style="width:100%" onclick="onClick(this)" 
-                alt="This is a biomechanical device used to collect balance data from the user.">
+                <div class="container">
+                    <img src="img/knarr/knarr1_1.jpg" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="This is a biomechanical device used to collect balance data from the user. It's use case 
+                    is to attach to the user's hip or be put into a pocket and be as inconspicuous as possible. 
+                    It has an Inertial Measurement Unit (IMU) which is a sensor that contains an accelerometer, gyroscope, and magnetometer.
+                    A small microcontroller on board the PCB collects IMU data and transmits it over bluetooth to a 
+                    listening mobile app. It also has an on board SD card where data is stored.">
+                    <div class="middle">
+                        <div class="text">Custom Balance Monitor</div>
+                    </div>
+                </div>
 
-                <img src="img/kaneko/exhibit2.jpg" style="width:100%" onclick="onClick(this)" 
-                alt="During my internship as a biomechanics research assistant, I developed a 
-                virtual reality android app that was featured at the Kaneko Kinetic: Art of Motion, 
-                art exhibit. This app gave the user several ballance challenging visuals for research
-                studies. This app was developed in Unity using C#.">
+                <div class="container">
+                    <img src="img/kaneko/exhibit2.jpg" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="During my internship as a biomechanics research assistant, I developed a 
+                    virtual reality android app that was featured at the Kaneko Kinetic: Art of Motion, 
+                    art exhibit. This app gave the user several ballance challenging visuals for research
+                    studies. This app was developed in Unity using C#.">
+                    <div class="middle">
+                        <div class="text">Android VR Balance App</div>
+                    </div>
+                </div>
             </div>
         
             <div class="w3-third">
-                <img src="img/sharif2/sharif2_1.jpg" style="width:100%" onclick="onClick(this)" 
-                alt="This PCB was designed for my embedded system design class. This is the prototype 
-                and foundation for my senior capstone project. It connects to your phone over bluetooth
-                and transmits temperature data to the phone as well as stores it in an SD card.">
+                <div class="container">
+                    <img src="img/sharif2/sharif2_1.jpg" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="This PCB was designed for my embedded system design class. This is the prototype 
+                    and foundation for my senior capstone project. It connects to your phone over bluetooth
+                    and transmits temperature data to the phone as well as stores it in an SD card.">
+                    <div class="middle">
+                        <div class="text">Wireless Temperature Monitor</div>
+                    </div>
+                </div>
 
-                <img src="img/hololens/hololens.jpg" style="width:100%" onclick="onClick(this)" 
-                alt="As an intern at the National Strategic Research Institute, or NSRI, I developed
-                several augmented reality (AR) applications using the Microsoft Hololens. One such app was
-                an air traffic control (ATC) simulator which was used for research in the practicality of AR,
-                specifically the Microsoft Hololens, in the training of ATCs. Through this internship 
-                I developed a strong passion for AR and VR.">
+                <div class="container">
+                    <img src="img/hololens/hololens.jpg" class="image" style="width:100%" onclick="onClick(this)" 
+                    alt="As an intern at the National Strategic Research Institute, or NSRI, I developed
+                    several augmented reality (AR) applications using the Microsoft Hololens. One such app was
+                    an air traffic control (ATC) simulator which was used for research in the practicality of AR,
+                    specifically the Microsoft Hololens, in the training of ATCs. Through this internship 
+                    I developed a strong passion for AR and VR.">
+                    <div class="middle">
+                        <div class="text">Microsoft Hololens AR Development</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -94,10 +126,10 @@
 
     <!-- Footer -->
     <footer class="footer w3-container w3-padding-32 w3-center w3-black w3-xxlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <i class="fa fa-youtube w3-hover-opacity"></i>
+        <i class="fa fa-facebook-official w3-hover-opacity my-pink"></i>
+        <i class="fa fa-instagram w3-hover-opacity my-pink"></i>
+        <i class="fa fa-linkedin w3-hover-opacity my-pink"></i>
+        <i class="fa fa-youtube w3-hover-opacity my-pink"></i>
     </footer>
 
     <script>
