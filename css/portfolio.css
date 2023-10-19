@@ -1,49 +1,35 @@
+html,
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+    height: 100%;
 }
 
 .timeline {
-  position: relative;
-  margin: 0 auto;
-}
-
-/* Vertical line */
-.timeline::before {
-  content: "";
-  position: absolute;
-  background: #333;
-  width: 2px;
-  height: 100vh;
-  left: 30%;
-  top: 0;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -118px;
+    vertical-align:bottom;
 }
 
 .entry {
   display: flex;
-  padding: 10px 40px;
 }
 
 .date_and_loc {
   width: 30%;
-  padding: 10px;
   text-align: right;
-  font-weight: bold;
-  border: 2px solid red;
+  padding: 5px 15px 30px 10px;
 }
 
 .content {
-  text-align: left;
   width: 70%;
-  padding: 10px;
-  border: 2px solid red;
+  text-align: left;
+  border-left: 3px solid black;
+  padding: 0 10px 30px 15px;
 }
 
 /* Title of the card */
 .title {
-  color: orangered;
   position: relative;
 }
 
@@ -51,13 +37,12 @@ body {
 .title::before {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: black;
-  border-radius: 50%;
-  left: -39px;
-  z-index: 1;
-  border: 3px solid orangered;
+  width: 9px;
+  height: 35px;
+  background: #343050;
+  border-radius: 999px;
+  left: -21px;
+  border: 3px solid black;
 }
 
 h3 {
@@ -66,9 +51,4 @@ h3 {
 
 p {
   margin: 10px 0;
-}
-
-/* Centering the line between dates/locations and content */
-.entry .content {
-  margin-left: 60px;
 }

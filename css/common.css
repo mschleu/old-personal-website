@@ -16,14 +16,32 @@
     font-weight:bold;
 }
 
-.my-pink {
-    color: #fe00fe;
+.my-tertiary-color {
+    color: #ddecf1;
 }
 
-.my-blue {
-    color:#00b3fe
+.my-secondary-color {
+    color:#9cd1dc
 }
 
-.my-background-color {
-    background-color:#1c0027
+.my-primary-color {
+    background-color:#343050
+}
+
+.nav-block a.active:before {
+    content: '[ '
+}
+
+.nav-block a.active:after {
+    content: ' ]'
+}
+
+.divPush {
+    height: 118px;
+}
+
+.footer {
+    width: 100%;
+    height: 118px;
+    bottom: 0;
 }
