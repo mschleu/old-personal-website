@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta character="utf-8"/>
+    <meta character="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css" type="text/css"/>
-    <link rel="stylesheet" href="css/common.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
     <title>Mason Schleu | Home</title>
 </head>
 
-<body class="my-background-color">
+<body class="my-primary-color">
     <!-- !PAGE CONTENT! -->
     <div class="home w3-content">
         <div class="box w3-container w3-content w3-center w3-display-middle" style="padding:128px 16px">
             <h1 class="w3-jumbo">MASON SCHLEU</h1>
             <h2 class="w3-xxxlarge w3-padding-32">Software Engineer</h2>
-            <hr style="margin:auto;height:3px;width:40%;border-width:0;background-color:#defe47">
+            <hr style="margin:auto;height:3px;width:40%;border-width:0;background-color:#ddecf1">
             <div class="nav-block w3-padding-32">
                 <div class="w3-bar">
                     <a href="index.html" class="active w3-xlarge w3-bar-item my-button" style="color:#00b3fe">HOME</a>
@@ -29,32 +30,33 @@
         </div>
         <div class="divPush"></div>
     </div>
-    
+
     <!-- Footer -->
     <footer class="footer w3-container w3-padding-32 w3-center w3-black w3-xxlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity my-pink"></i>
-        <i class="fa fa-instagram w3-hover-opacity my-pink"></i>
-        <i class="fa fa-linkedin w3-hover-opacity my-pink"></i>
-        <i class="fa fa-youtube w3-hover-opacity my-pink"></i>
+        <i class="fa fa-facebook-official w3-hover-opacity my-tertiary-color"></i>
+        <i class="fa fa-instagram w3-hover-opacity my-tertiary-color"></i>
+        <i class="fa fa-linkedin w3-hover-opacity my-tertiary-color"></i>
+        <i class="fa fa-youtube w3-hover-opacity my-tertiary-color"></i>
     </footer>
 
     <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        } else { 
-        x.className = x.className.replace(" w3-show", "");
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
-    }
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function(event) {
-        if (event.target == modal) {
-        modal.style.display = "none";
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
-    }
     </script>
 </body>
+
 </html>

@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+}
+
+.timeline {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -118px;
+    vertical-align:bottom;
+}
+
+.entry {
+  display: flex;
+}
+
+.date_and_loc {
+  width: 30%;
+  text-align: right;
+  padding: 5px 15px 30px 10px;
+}
+
+.content {
+  width: 70%;
+  text-align: left;
+  border-left: 3px solid black;
+  padding: 0 10px 30px 15px;
+}
+
+/* Title of the card */
+.title {
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 35px;
+  background: #343050;
+  border-radius: 999px;
+  left: -21px;
+  border: 3px solid black;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 10px 0;
+}
