@@ -14,7 +14,7 @@
 <body class="my-primary-color">
     <!-- Navbar -->
     <div class="w3-top">
-        <div class="nav-block w3-bar w3-black w3-card">
+        <div class="nav-block w3-bar w3-aqua w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
@@ -36,16 +36,12 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Robot Collision Prevention</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C++, gRPC, protobuf, microservices, API design, refactoring</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    For this project I identified a bottleneck in our system to be a very important component responsible
+                    for the collision prevension of robots. My goal was to break this component out into its own microservice 
+                    and expose a gRPC interface for it. This refactor resulted in code that was much easier to maintain, scale, 
+                    and improved performance.
                 </p>
             </div>
         </div>
@@ -56,16 +52,13 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Internal UI Backend</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Python, Kafka, MongoDB, Socket.io, NGINX reverse proxy</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    For this project, the goal was to utilize our data pipeline framwork to create the backend for our
+                    internal UI. Here, I designed a comprehensive set of messages needed to control our system. I 
+                    wrote a snapshot + update style streaming service where the interface with the frontend was socket.io
+                    over an nginx reverse proxy server. I then wrote an interface specification for our frontend team to 
+                    develop against this new set of messages. This project was a huge success and our UI looks and runs amazing!
                 </p>
             </div>
         </div>
@@ -76,16 +69,12 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Data Pipeline Framework</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Python, kafka, MongoDB, Websockets, gRPC, Data streaming</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    For this project I designed a framwork to quickly and easily create extremely complex data pipelines.
+                    The data it supports is streaming, unbounded, stateful, and unstructured - a very non-standard data set.
+                    This framework has greatly helped the team spin up new data pipelines as needed, extend its capabilities, 
+                    and add new messages to it. 
                 </p>
             </div>
         </div>
@@ -96,16 +85,14 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Issue Reporter</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Python, Rundeck, Slack API, Box API, Google Cloud API</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This is one of my favorite projects and it has already gone through several iterations, nearing its perfect form.
+                    This is an on-site operations and testing tool that automated the collections of robot logs.
+                    This is extremely important for many people including firmware engineers who need it for debugging issues, 
+                    analytics teams for tracking bot issues, and hardware folks for maintenance purposes. This tool has 
+                    gradually improved each iteration and is now fully automated. It has processed thousands of issues and 
+                    collected thousands of logs to date. 
                 </p>
             </div>
         </div>
@@ -116,16 +103,12 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Portfolio Website</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>HTML, CSS, AWS, frontend development</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    I started this website back in college. I did not, and still do not, know much about frontend web development. 
+                    This has been a very fun ongoing project for 5+ years where I occasionally hop on to update my
+                    portfolio and make improvements here and there. it has taught me the fundamentals of HTML and CSS, 
+                    owning a website, deploying a website, and was my first introduction to AWS. 
                 </p>
             </div>
         </div>
@@ -136,16 +119,14 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Cross-Platform Build System</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Python, opkg, build systems, packaging, automation</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This project was to automate and simplify my teams build and deployment process. We had several build 
+                    target architectures and several releases and versions going on all at the same time and it was 
+                    difficult to wrangle it all. This tool was a cross platform package manager that was installed on all
+                    developers workstations. It was a really cool peek into how actuall third party build systems like Opkg and Dpkg
+                    work under the hood. Overall this tool saved everyone a ton of work and time when it came to building 
+                    and deploying our software. 
                 </p>
             </div>
         </div>
@@ -156,16 +137,11 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Automated Testing Framework</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Python, testing/verification, automation, IPv6, Communication Protocols, Socket programming, Serial programming</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This test framework was developed in-house to automate the verification of all of our test cases. 
+                    The test harness would setup a system to shoot millions of network packets through our unit under test, which 
+                    was a network switch. It used a classic filter and expected vs. actual pattern to get the job done. 
                 </p>
             </div>
         </div>
@@ -176,16 +152,10 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Config Service</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C++, Unit Testing, Documentation, Sphinx, API Design</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This was a library used to configure our system. It supported zookeeper, yaml, and json configuration formats.
+                    This was my first introduction into API design and developing code that follows a specification. 
                 </p>
             </div>
         </div>
@@ -196,16 +166,13 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Custom FitBit</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C, Microcontrollers, Circuit design, PCB manufacturing,</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This is a biomechanical device used to collect balance data from the user. It's use case 
+                    is to attach to the user's hip or be put into a pocket and be as inconspicuous as possible. 
+                    It has an Inertial Measurement Unit (IMU) which is a sensor that contains an accelerometer, gyroscope, and magnetometer.
+                    A small microcontroller on board the PCB collects IMU data and transmits it over bluetooth to a 
+                    listening mobile app. It also has an on board SD card where data is stored.
                 </p>
             </div>
         </div>
@@ -216,16 +183,14 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Mobile BESS Balance Test</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Mobile development, Android, Java, sensors</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This image displays screenshots of the first mobile application I ever developed
+                    for android. This app was developed for my FUSE study during my undergrad. It walks the
+                    user through the BESS balance test. It collects balance data while the user performs these tests.
+                    This mobile data was compared with high dollar, state of the art research equipment.
+                    The purpose of this study was to determine if a low cost solution, such as a smart phone,
+                    is a viable and accurate option to its expensive alternative
                 </p>
             </div>
         </div>
@@ -236,16 +201,12 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Mobile VR Balance App</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Mobile development, Android, Java, sensors, VR</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    During my internship as a biomechanics research assistant, I developed a 
+                    virtual reality android app that was featured at the Kaneko Kinetic: Art of Motion, 
+                    art exhibit. This app gave the user several ballance challenging visuals for research
+                    studies. This app was developed in Unity using C#.
                 </p>
             </div>
         </div>
@@ -258,14 +219,11 @@
                 <h3 class="title my-secondary-color">Air Traffic Control Simulator</h3>
                 <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    As an intern at the National Strategic Research Institute, or NSRI, I developed
+                    several augmented reality (AR) applications using the Microsoft Hololens. One such app was
+                    an air traffic control (ATC) simulator which was used for research in the practicality of AR,
+                    specifically the Microsoft Hololens, in the training of ATCs. Through this internship 
+                    I developed a strong passion for AR and VR.
                 </p>
             </div>
         </div>
@@ -276,16 +234,11 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Foot Temperature Monitor</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C, Bluetooth, Circuit design, STM32, ARM</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This was my senior capstone poject. It is a foot temperature monitoring system 
+                    for those suffering from diabetes. The goal is to monitor foot temperature and inform 
+                    the user that their foot is at an increased risk of developing a foot ulcer.
                 </p>
             </div>
         </div>
@@ -296,16 +249,10 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Hexapod Robot</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>Linux, ROS, BeagleBone Black, Robotics</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    I built a six-legged robot for one of my embedded systems classes. It was controlled by a play station
+                    controller. 
                 </p>
             </div>
         </div>
@@ -316,16 +263,10 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Bluetooth Prototype Board</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C, Bluetooth, Circuit design, STM32, ARM, MCU, LCD</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This was a prototype for my capstone project, but it stands out on its own as it has extra features such as 
+                    an LCD screen.
                 </p>
             </div>
         </div>
@@ -336,16 +277,10 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">CEEN Bot Upgrades</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C, Robotics, Control systems</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    As part of my engineering program we were given a robot. Throughout our courses we upgraded and
+                    modified the robot for various exercises. This taught me sensor processing and control and feedback systems.
                 </p>
             </div>
         </div>
@@ -356,16 +291,9 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">Classic RISC CPU</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>CPU, RISC, FPGA, VHDL, Xilinx</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    For this project I designed a classic RISC architecture 5-stage pipeline CPU in VHDL.
                 </p>
             </div>
         </div>
@@ -376,16 +304,11 @@
             </div>
             <div class="content">
                 <h3 class="title my-secondary-color">8051 Based System</h3>
-                <p class="my-secondary-color"><strong>Skills used:</strong> c programming, assembly, ram, rom, mcu</p>
+                <p class="my-secondary-color"><strong>Skills used: </strong>C, PCB design</p>
                 <p class="description my-tertiary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo id odio tincidunt mattis.
-                    Sed eget justo ligula. Suspendisse potenti. Vivamus feugiat libero ac congue posuere. Quisque
-                    viverra orci eu lacinia consequat. Aliquam erat volutpat. Sed venenatis mauris eget justo vehicula,
-                    ac hendrerit tellus pharetra. Curabitur ac ex non libero volutpat tincidunt. Nunc eget sapien at
-                    ipsum faucibus tincidunt. Sed auctor quis libero in laoreet. Aenean vel metus eu justo condimentum
-                    hendrerit. Sed sed ligula in sapien facilisis iaculis. Vivamus euismod quam vel justo congue, a
-                    auctor erat tincidunt. Nulla facilisi. Sed ut feugiat libero. Integer at quam sed elit facilisis
-                    bibendum. Curabitur vel dui ut nisi fringilla volutpat.
+                    This was my second PCB design. It featured a 8051 processor, RAM, ROM, LCD, and keypad. This taught many 
+                    embedded firmware skills like how to initialize circuit components, power, reading datasheets, and 
+                    developing a BIOS. 
                 </p>
             </div>
         </div>
